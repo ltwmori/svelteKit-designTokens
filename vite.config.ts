@@ -7,7 +7,7 @@ export default defineConfig({
 		fs: {
 			allow: [
 				// allow the tokens file to be served
-				'tokens.json'
+				'./style-dictionary/tokens/**/*.json'
 			]
 		}
 	}
