@@ -1,10 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Using variables</h1>
 
-<script>
-    
-    const buttonStyles = `radius: $border-radius-lg; color: $colors-indigo-100;`;
-  </script> 
-  
-<button style="{buttonStyles}">Click me</button>
-  
+<button class="my-button">Click me</button>
+
+<style lang="scss">
+	@import '../../style-dictionary/build/scss/_variables.scss';
+
+	.my-button {
+		background-color: $colors-orange-500;
+	}
+</style>
