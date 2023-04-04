@@ -1,0 +1,16 @@
+{
+	"source": ["tokens/**/*.json"],
+	"platforms": {
+	  "svelte": {
+		"transformGroup": "svelte",
+		"buildPath": "src/tokens/",
+		"files": [
+		  {
+			"destination": "index.js",
+			"format": "javascript/es6"
+		  }
+		]
+	  }
+	}
+  }
+  
